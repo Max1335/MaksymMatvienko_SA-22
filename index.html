@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vortex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo">
+            <img src="images/logo.svg" alt="логотип" class="logo-img" />
+          </a>
+
+          <ul class="sidebar">
+            <button onclick=hideSidebar()  class="burger-close" type="button">
+          </button>
+            <li class="menu-item">
+              <a href="#about" class="menu-link">Про нас</a>
+            </li>
+            <li class="menu-item">
+              <a href="#why_us" class="menu-link">Послуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="#subscriptions" class="menu-link">Абонементи</a>
+              <ul>
+                <li><a href="#basic">Базовий</a></li>
+                <li><a href="#standart">Стандартний</a></li>
+                <li><a href="#premium">Преміум</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#contact_us" class="menu-link">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#about" class="menu-link">Про нас</a>
+            </li>
+            <li class="menu-item">
+              <a href="#why_us" class="menu-link">Послуги</a>
+            </li>
+            <li class="menu-item">
+              <a href="#subscriptions" class="menu-link">Абонементи</a>
+              <ul>
+                <li><a href="#basic">Базовий</a></li>
+                <li><a href="#standart">Стандартний</a></li>
+                <li><a href="#premium">Преміум</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#contact_us" class="menu-link">Контакти</a>
+            </li>
+          </ul>
+          <button onclick=showSidebar()  class="menu-btn" type="button">
+          </button>
+
+          
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-page">
+        <div class="container">
+          <h1 class="title">
+            Досягни найкращої форми разом з професійними тренерами
+          </h1>
+          <h5 class="title-about">
+            Наші сертифіковані тренери розроблять для вас
+            індивідуальну програму тренувань та харчування.
+            Будьте на крок ближче до вашої фітнес-мети разом з нами!
+          </h5>
+          <a href="#" class="main-btn">
+            Безкоштовна консультація
+          </a>
+        </div>
+      </section>
+      
+      <section class="about-us" id="about">
+        <div class="container">
+          <h2 class="about-us-title">
+            Про нас
+          </h2>
+          <div class="about-us-info">
+            <h4 class="about-us-text">
+            Ми — команда професійних фітнес-тренерів, об'єднаних однією метою: допомогти вам досягти найкращої форми життя. 
+            Наша філософія полягає в індивідуальному підході до кожного клієнта, адже кожна людина унікальна, 
+            і її фітнес-подорож теж повинна бути особливою.Ми пропонуємо не просто тренування, 
+            а повну підтримку на шляху до здорового та активного способу життя. Наші тренери — сертифіковані 
+            експерти з багаторічним досвідом, які готові створити для васперсоналізований план тренувань та харчування. 
+            З нами ви отримуєте не тільки результат, але й мотивацію досягати нових висот.
+            </h4>
+            <img src="images/about-us.png" alt="про нас" class="about-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us" id="why_us">
+        <div class="container">
+          <h2 class="why-us-title">
+            Чому саме ми
+          </h2>
+          <div class="why-us-cards">
+            <img src="images/ei--arrow-right 1.svg" alt="стріла вліво" class="arrow">
+            <div class="card-holder">
+              <div class="card">
+              <img src="images/gym-dynamic-premium.svg" alt="#" class="card-img">
+              <h4 class="card-title">Індивідуальний підхід</h4>
+              <p class="card-text">
+                Ми створюємо персоналізовані 
+                програми тренувань, враховуючи 
+                ваші особливості та цілі. 
+                Тільки ви та ваш тренер!    
+              </p>
+            </div>
+            <div class="card">
+              <img src="images/notebook-dynamic-premium.svg" alt="#" class="card-img">
+              <h4 class="card-title">Досвідчені тренери</h4>
+              <p class="card-text">
+                Кожен наш тренер — 
+                сертифікований професіонал 
+                з багаторічним досвідом, 
+                готовий допомогти вам досягти
+                ваших фітнес-цілей.    
+              </p>
+            </div>
+            <div class="card">
+              <img src="images/phone-ringing-dynamic-premium.svg" alt="#" class="card-img">
+              <h4 class="card-title">Підтримка 24/7</h4>
+              <p class="card-text">
+                Ми завжди на зв'язку для ваших
+                запитань та консультацій. 
+                З нашою командою ви завжди 
+                матимете підтримку на шляху
+                до мети.    
+              </p>
+            </div>
+            </div>
+            
+            <img src="images/ei--arrow-right 2.svg" alt="стріла вправо" class="arrow">
+          </div>
+        </div>
+      </section>
+
+      <section class="active-video">
+        <video poster="videos/video.mp4" autoplay muted>
+          <source src="videos/video.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section class="subscriptions" id="subscriptions">
+        <div class="container">
+          <h2 class="sub-title">
+            Виберіть абонемент, який підходить саме вам
+          </h2>
+          <div class="sub-cards">
+            <div class="sub-card">
+              <h4 class="sub-name" id="basic">Базовий</h4>
+              <h4 class="sub-price">2999</h4>
+              <p class="sub-price-duration">грн/місяць</p>
+              <hr>
+              <ul class="sub-menu">
+                <li class="sub-text">4 індивідуальні тренування на місяць (1 раз на тиждень)</li>
+                <li class="sub-text">Безкоштовний доступ до загальних групових занять (йога, аеробіка)</li>
+                <li class="sub-text">Оцінка фізичного стану та план тренувань</li>
+                <li class="sub-text">Онлайн консультація тренера з питань харчування</li>
+              </ul>
+              <a href="#" class="sub-btn">Почати тренування</a>
+            </div>
+
+            <div class="sub-card">
+              <h4 class="sub-name" id="standart">Стандартний</h4>
+              <h4 class="sub-price">4999</h4>
+              <p class="sub-price-duration">грн/місяць</p>
+              <hr>
+              <ul class="sub-menu">
+                <li class="sub-text">8 індивідуальних тренувань на місяць (2 рази на тиждень)</li>
+                <li class="sub-text">Доступ до всіх групових занять</li>
+                <li class="sub-text">Персоналізований план харчування</li>
+                <li class="sub-text">Щотижневі консультації з тренером</li>
+                <li class="sub-text">Безкоштовний доступ до додаткових заходів (семінари, майстер-класи)</li>
+              </ul>
+              <a href="#" class="sub-btn">Почати тренування</a>
+            </div>
+
+            <div class="sub-card">
+              <h4 class="sub-name" id="premium">Преміум</h4>
+              <h4 class="sub-price">8999</h4>
+              <p class="sub-price-duration">грн/місяць</p>
+              <hr>
+              <ul class="sub-menu">
+                <li class="sub-text">12 індивідуальних тренувань на місяць (3 рази на тиждень)</li>
+                <li class="sub-text">Доступ до всіх групових занять та спеціалізованих класів (підготовка до змагань, функціональні тренування)</li>
+                <li class="sub-text">Інтенсивний план харчування і супровід дієтолога</li>
+                <li class="sub-text">Щоденний моніторинг прогресу і корекція плану тренувань</li>
+                <li class="sub-text">Безкоштовні масажі та інші додаткові послуги (оздоровчі процедури)</li>
+              </ul>
+              <a onclick=showSidebar()  href="#" class="sub-btn">Почати тренування</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="review-title">Відгуки наших клієнтів</h2>
+          <div class="review-container">
+            
+            <div class="review">
+              <div class="review-header">
+                <h4 class="name">Олександра</h4>
+                <div class="rating">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                </div>
+              </div>
+              <p class="review-text">
+                Тренування з цим сервісом – це просто знахідка! Моє тіло 
+                змінилося, а тренер завжди на зв'язку, щоб підбадьорити 
+                і дати пораду. Почуваюся значно краще як фізично, так і 
+                морально. 
+              </p>
+            </div>
+            
+            <div class="review">
+              <div class="review-header">
+                <h4 class="name">Сергій</h4>
+                <div class="rating">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/empty-star.svg" alt="#">
+                </div>
+              </div>
+              <p class="review-text">
+                Раніше я думав, що треба ходити в зал щодня для 
+                результату, але тут мене навчили тренуватись ефективніше. 
+                Я відчуваю себе сильнішим і витривалішим, і це лише за 
+                кілька місяців.
+              </p>
+            </div>
+
+            <div class="review">
+              <div class="review-header">
+                <h4 class="name">Ірина</h4>
+                <div class="rating">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                </div>
+              </div>
+              <p class="review-text">
+                Я ніколи раніше не могла знайти мотивацію для 
+                регулярних тренувань, але з моїм тренером усе змінилося. 
+                Програма тренувань настільки зручна і гнучка, що я вже 
+                два місяці займаюся без пропусків і бачу прогрес!
+              </p>
+            </div>
+            
+            <div class="review">
+              <div class="review-header">
+                <h4 class="name">Андрій</h4>
+                <div class="rating">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                </div>
+              </div>
+              <p class="review-text">
+                Завжди був скептичним щодо онлайн-тренувань, але 
+                вирішив спробувати. І знаєте, це працює! Тренер
+                підлаштовує програму під мене, і я можу займатися тоді, 
+                коли зручно. Результати не змусили себе чекати!
+              </p>
+              </div>
+
+              <div class="review">
+              <div class="review-header">
+                <h4 class="name">Максим</h4>
+                <div class="rating">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                  <img src="images/filled-star.svg" alt="#">
+                </div>
+              </div>
+              <p class="review-text">
+               Мій графік дуже щільний, але з цим сервісом тренування 
+              стали можливими навіть в обідню перерву. Програма 
+              гнучка, і це дозволило мені схуднути на 7 кг, не витрачаючи 
+              купу часу.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us" id="contact_us">
+        <div class="container">
+          <h4 class="contact-us-title">
+            Маєте питання? Залиште заявку, і ми вам допоможемо!
+          </h4>
+          <div class="contact-us-container">
+            <p class="contact-us-text">
+              Не відкладайте свою фітнес-мету на потім! Заповніть форму, 
+              і наш тренер зв'яжеться з вами, щоб допомогти вибрати найкращий план тренувань для вас. 
+              Ми тут, щоб підтримати ваш шлях до успіху.
+            </p>
+            <div class="contact-us-form">
+              <input type="text" name="name" placeholder="Ваше ім'я" class="form-name">
+              <input type="text" name="email" placeholder="Ваша електронна пошта" class="form-email">
+              <input type="number" name="phone" placeholder="Ваш номер телефону" class="form-number">
+              <textarea name="message" placeholder="Ваше повідомлення"   class="form-message"></textarea>
+              <a href="#" class="form-btn">
+                Почати тренування
+              </a>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+      <section class="footer">
+        <div class="container">
+          <div class="footer-container">
+            <div class="about">
+              <img src="images/logo.svg" alt="лого" class="img">
+              <p class="text">
+                Ми допомагаємо людям досягати своїх фітнес-цілей 
+                з індивідуальним підходом і тренерами, які працюють на результат.
+              </p>
+            </div>
+            <div class="footer-second-part">
+              <div class="address">
+                <h4 class="address-title">Наша адреса</h4>
+                <p class="address-text">м.Львів, вул. Степана Бандери, 12, Україна</p>
+              </div>
+            
+              <div class="social">
+                <h4 class="social-title">
+                 Контакти
+                </h4>
+                <p class="phone-number">+380 ХХХ ХХХ ХХХ</p>
+                <div class="social-icons">
+                  <img src="icons/instagram.svg" alt="#" class="icon">
+                  <img src="icons/facebook.svg" alt="#" class="icon">
+                  <img src="icons/tiktok.svg" alt="#" class="icon">
+                  <img src="icons/twitter.svg" alt="#" class="icon">
+                </div>
+              </div>            
+            </div>
+          </div> 
+        </div>
+      </section>
+    </main>
+
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex' 
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none' 
+      }
+    </script>
+  </body>
+</html>
