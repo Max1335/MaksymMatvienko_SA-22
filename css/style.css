@@ -99,7 +99,7 @@ ul {
 .main-page {
   text-align: center;
   margin-top: -55.5px;
-  padding: 260px 0 90px;
+  padding: 260px 0 96px;
   background: url(../images/main-page.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +132,7 @@ ul {
   background-color: #FFCC00;
   padding: clamp(15px, 1.67vw ,32px) clamp(72px, 7.81vw ,150px);
   border-radius: 35px;
-  margin: 116px 0 0;
+  margin: 180px 0 0;
 }
 
 .main-btn:hover{
@@ -425,9 +425,10 @@ hr {
 }
 
 .contact-us {
+
   padding: 23px 0 64px 0;
   margin: 0 0 130px 0;
-  background: url(../images/image-3.png);
+  background-image: url("/images/image-3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -849,3 +850,8 @@ hr {
   }
 }
 
+@media(max-width: 425px){
+  .why-us-title{
+    font-size: 29px;
+  }
+}
