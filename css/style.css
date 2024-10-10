@@ -362,7 +362,6 @@ hr {
 
 .review-container {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: flex-start;
   gap: 0 30px;
   overflow-x: auto;
@@ -479,8 +478,9 @@ hr {
 .form-name,
 .form-email,
 .form-number,
-.form-message {
-  margin: 0 0 31px;
+.form-message,
+select {
+  margin: 0 0 21px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -495,6 +495,15 @@ hr {
 .form-number {
   width: 100%;
   height: 11%;
+}
+
+.subscribes{
+  width: 100%;
+  height: 11%;
+}
+
+option{
+  padding: 0;
 }
 
 
@@ -514,7 +523,7 @@ hr {
 
 .form-message{
   width: 100%;
-  height: 180px;
+  height: 120px;
 }
 
 
@@ -522,7 +531,7 @@ hr {
   display: inline-block;
   max-width: 232px;
   max-height: 36px;
-  margin: 21px auto 50px;
+  margin: 34px auto 50px;
   padding: 9px 35px;
   color: #1A1404;
   background-color: #FFCC00;
@@ -644,6 +653,15 @@ hr {
 
 .sidebar a{
   width: 100%;
+}
+
+label{
+  width: 100%
+}
+
+.Checkbox{
+  font-size: clamp(16px, 1.25vw, 24px);
+  border-radius: 5px;
 }
 
 @media (max-width: 1750px){
@@ -841,6 +859,10 @@ hr {
     padding-right: 25px;
     font-size: 17px;
   }
+
+  label{
+    width: 85%;
+  }
 }
 
 
@@ -855,3 +877,4 @@ hr {
     font-size: 27px;
   }
 }
+
