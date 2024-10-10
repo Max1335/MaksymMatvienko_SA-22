@@ -78,7 +78,7 @@
             індивідуальну програму тренувань та харчування.
             Будьте на крок ближче до вашої фітнес-мети разом з нами!
           </h5>
-          <a href="#" class="main-btn">
+          <a href="#contact_us" class="main-btn">
             Безкоштовна консультація
           </a>
         </div>
@@ -323,25 +323,31 @@
               і наш тренер зв'яжеться з вами, щоб допомогти вибрати найкращий план тренувань для вас. 
               Ми тут, щоб підтримати ваш шлях до успіху.
             </p>
-            <div class="contact-us-form">
-              <input type="text" name="name" placeholder="Ваше ім'я" class="form-name">
-              <input type="text" name="email" placeholder="Ваша електронна пошта" class="form-email">
-              <input type="number" name="phone" placeholder="Ваш номер телефону" class="form-number">
-              <select name="subscription" id="" class="subscribes">
-                <option value="" disabled selected>Виберіть підписку</option>
-                <option value="">Базова</option>
-                <option value="">Стандартна</option>
-                <option value="">Преміум</option>
-              </select>
-              <textarea name="message" placeholder="Ваше повідомлення"   class="form-message"></textarea>
-              <label class="Checkbox">
-                <input type="checkbox" name="Agree" class="">
-                Згідний з обробкою персональних даних.
-              </label>
-              <a href="#" class="form-btn">
-                Почати тренування
-              </a>
-            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <div class="contact-us-form">
+                <input type="hidden" name="access_key" value="2adaed11-11c1-4b25-80ad-7db7f42a6429">
+                <input type="text" name="name" placeholder="Ваше ім'я" class="form-name" required>
+                <input type="text" name="email" placeholder="Ваша електронна пошта" class="form-email" required>
+                <input type="number" name="phone" placeholder="Ваш номер телефону" class="form-number" required>
+                <select name="subscription" id="" class="subscribes" required>
+                  <option value="" disabled selected>Виберіть підписку</option>
+                  <option value="">Базова</option>
+                  <option value="">Стандартна</option>
+                  <option value="">Преміум</option>
+                </select>
+                <textarea name="message" placeholder="Ваше повідомлення"   class="form-message"></textarea>
+                <label class="Checkbox">
+                  <input type="checkbox" name="Agree" class="" required>
+                  Згідний з обробкою персональних даних.
+                </label>
+                <!-- <a href="" class="form-btn" type="submit">
+                  Почати тренування
+                </a> -->
+
+                <input type="submit" value="Почати тренування" name="Send" class="form-btn">
+              </div>
+            </form>
           </div>
         </div> 
       </section>
