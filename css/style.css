@@ -533,8 +533,10 @@ option{
 
 .form-btn {
   display: inline-block;
-  max-width: 232px;
-  max-height: 36px;
+  /* max-width: 232px;
+  max-height: 36px; */
+  max-width: 290px;
+  max-height: 55px;
   margin: 34px auto 50px;
   padding: 9px 35px;
   color: #1A1404;
