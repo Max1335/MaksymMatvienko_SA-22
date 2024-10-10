@@ -1,12 +1,16 @@
-  html{
-    scroll-behavior: smooth;
-    scroll-padding: 30px;
-  }
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 30px;
+}
 
 
 
 body::-webkit-scrollbar {
   width: 14px;
+}
+
+body{
+  overflow-x: hidden  ;
 }
         
 body::-webkit-scrollbar-track {
@@ -479,7 +483,7 @@ hr {
 .form-email,
 .form-number,
 .form-message,
-select {
+.subscribes {
   margin: 0 0 21px;
   font-size: 24px;
   font-weight: 400;
@@ -560,11 +564,6 @@ option{
   max-height: 243px;
 }
 
-/* .address{
-  max-width: 366px;
-  max-height: 121px;
-} */
-
 .footer-second-part{
   display: flex;
   justify-content: space-between;
@@ -577,10 +576,6 @@ option{
   line-height: clamp(15px, 1.87vw ,36px);
 }
 
-/* .social{
-  max-width: 225px;
-  max-height: 123px;
-} */
 
 .address-title,
 .social-title {
@@ -834,12 +829,19 @@ label{
 
   .form-email,
   .form-name,
-  .form-number {
+  .form-number{
    width: 85%;
    height: 9%;
    margin-bottom: 20px;
    font-size: 16px;
   }
+
+   .subscribes{
+    width: 89%;
+    height: 9%;
+    margin-bottom: 20px;
+    font-size: 16px;
+   }
 
   .form-message{
    width: 85%;
@@ -863,6 +865,7 @@ label{
   label{
     width: 85%;
   }
+
 }
 
 
