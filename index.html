@@ -19,7 +19,7 @@
           </a>
 
           <ul class="sidebar">
-            <button onclick=hideSidebar()  class="burger-close" type="button">
+            <button onclick=toggleSidebar()  class="burger-close" type="button">
           </button>
             <li class="menu-item">
               <a href="#about" class="menu-link">Про нас</a>
@@ -59,7 +59,7 @@
               <a href="#contact_us" class="menu-link">Контакти</a>
             </li>
           </ul>
-          <button onclick=showSidebar()  class="menu-btn" type="button">
+          <button onclick=toggleSidebar()  class="menu-btn" type="button">
           </button>
 
           
@@ -151,7 +151,7 @@
       </section>
 
       <section class="active-video">
-        <video poster="videos/video.mp4" autoplay muted loop>
+        <video poster="videos/video.mp4" autoplay muted>
           <source src="videos/video.mp4" type="video/mp4">
         </video>
       </section>
@@ -203,7 +203,7 @@
                 <li class="sub-text">Щоденний моніторинг прогресу і корекція плану тренувань</li>
                 <li class="sub-text">Безкоштовні масажі та інші додаткові послуги (оздоровчі процедури)</li>
               </ul>
-              <a onclick=showSidebar()  href="#" class="sub-btn">Почати тренування</a>
+              <a href="#" class="sub-btn">Почати тренування</a>
             </div>
           </div>
         </div>
@@ -341,10 +341,6 @@
                   <input type="checkbox" name="Agree" class="" required>
                   Згідний з обробкою персональних даних.
                 </label>
-                <!-- <a href="" class="form-btn" type="submit">
-                  Почати тренування
-                </a> -->
-
                 <input type="submit" value="Почати тренування" name="Send" class="form-btn">
               </div>
             </form>
@@ -388,13 +384,17 @@
 
 
     <script>
-      function showSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex' 
-      }
-      function hideSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none' 
+      // function showSidebar(){
+      //   const sidebar = document.querySelector('.sidebar')
+      //   sidebar.style.display = 'flex' 
+      // }
+      // function hideSidebar(){
+      //   const sidebar = document.querySelector('.sidebar')
+      //   sidebar.style.display = 'none' 
+      // }
+      function toggleSidebar(){
+       const sidebar = document.querySelector('.sidebar');
+       sidebar.classList.toggle('active'); 
       }
     </script>
   </body>
