@@ -108,6 +108,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: -1;
 }
 
 .title {
@@ -347,14 +348,6 @@ hr {
   padding: 0 0 130px;
   margin: 0 25px;
 }
-
-/* .review-title {
-  margin: 0 85px 0 80px;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 72px;
-  padding: 0 0 20px;
-} */
 
 .review-title {
   margin: 0 auto;
@@ -634,13 +627,20 @@ option{
   margin: 0;
   height: 100vh;
   width: 250px;
+  border-radius: 25px 0 0 25px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
   color: #FAF5E9;
-  display: none;
+  display: flex;
   flex-direction: column;
+  transform: translateX(100%); 
+  transition: 0.4s ease;
+}
+
+.sidebar.active {
+  transform: translateX(0%); 
 }
 
 .sidebar li{
@@ -727,9 +727,7 @@ label{
 
   .contact-us-text{
     width: 100%;
-    /* height: 100%; */
     text-align: center;
-    /* font-size: 26px; */
   }
 }
 
@@ -772,7 +770,6 @@ label{
     margin: 20px 0 0 16px;
   }
 
-  
 
   .sidebar ul {
     display: none;
@@ -812,6 +809,7 @@ label{
     text-align: center;
   }
 } 
+
 
 @media(max-width: 778px) {
   .logo-img{
@@ -858,6 +856,7 @@ label{
     align-items: end;
     text-align: end;
     padding-right: 25px;
+    border-radius: 0;
   }
 
   .sidebar ul {
@@ -882,5 +881,6 @@ label{
   .why-us-title{
     font-size: 27px;
   }
+
 }
 
